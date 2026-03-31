@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="chart-f1737c45-bee6-485a-93a8-269fd744fc88"
+   class="pygal-chart"
+   viewBox="0 0 1000 600"
+   version="1.1"
+   sodipodi:docname="CNN_evolution_ink.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview156"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.439"
+     inkscape:cx="500"
+     inkscape:cy="299.86101"
+     inkscape:window-width="1920"
+     inkscape:window-height="1150"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="chart-f1737c45-bee6-485a-93a8-269fd744fc88" />
+  <!--Generated with pygal 3.1.0 (etree) ©Kozea 2012-2025 on 2026-03-30-->
+  <!--http://pygal.org-->
+  <!--http://github.com/Kozea/pygal-->
+  <defs
+     id="defs2">
+    <style
+       type="text/css"
+       id="style1">#chart-f1737c45-bee6-485a-93a8-269fd744fc88{-webkit-user-select:none;-webkit-font-smoothing:antialiased;font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .title{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:16px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .legends .legend text{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:14px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis text{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:10px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis text.major{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:10px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay text.value{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:16px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay text.label{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:10px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:14px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 text.no_data{font-family:Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;font-size:64px}
+#chart-f1737c45-bee6-485a-93a8-269fd744fc88{background-color:rgba(249,249,249,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 path,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 rect,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 circle{-webkit-transition:150ms;-moz-transition:150ms;transition:150ms}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .graph &gt; .background{fill:rgba(249,249,249,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .plot &gt; .background{fill:rgba(255,255,255,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .graph{fill:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 text.no_data{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .title{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .legends .legend text{fill:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .legends .legend:hover text{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .line{stroke:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .guide.line{stroke:rgba(0,0,0,.54)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .major.line{stroke:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis text.major{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y .guides:hover .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .line-graph .axis.x .guides:hover .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .stackedline-graph .axis.x .guides:hover .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .xy-graph .axis.x .guides:hover .guide.line{stroke:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .guides:hover text{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .reactive{fill-opacity:.7;stroke-opacity:.8;stroke-width:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .ci{stroke:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .reactive.active,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .active .reactive{fill-opacity:.8;stroke-opacity:.9;stroke-width:4}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .ci .reactive.active{stroke-width:1.5}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .series text{fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip rect{fill:rgba(255,255,255,1);stroke:rgba(0,0,0,1);-webkit-transition:opacity 150ms;-moz-transition:opacity 150ms;transition:opacity 150ms}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .label{fill:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .label{fill:rgba(0,0,0,.87)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .legend{font-size:.8em;fill:rgba(0,0,0,.54)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .x_label{font-size:.6em;fill:rgba(0,0,0,1)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .xlink{font-size:.5em;text-decoration:underline}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip .value{font-size:1.5em}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .bound{font-size:.5em}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .max-value{font-size:.75em;fill:rgba(0,0,0,.54)}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .map-element{fill:rgba(255,255,255,1);stroke:rgba(0,0,0,.54) !important}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .map-element .reactive{fill-opacity:inherit;stroke-opacity:inherit}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-0,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-0 a:visited{stroke:#F44336;fill:#F44336}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-1,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-1 a:visited{stroke:#3F51B5;fill:#3F51B5}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-2,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-2 a:visited{stroke:#009688;fill:#009688}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-3,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .color-3 a:visited{stroke:#FFC107;fill:#FFC107}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay .color-0 text{fill:black}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay .color-1 text{fill:black}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay .color-2 text{fill:black}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .text-overlay .color-3 text{fill:black}
+#chart-f1737c45-bee6-485a-93a8-269fd744fc88 text.no_data{text-anchor:middle}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .guide.line{fill:none}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .centered{text-anchor:middle}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .title{text-anchor:middle}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .legends .legend text{fill-opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.x text{text-anchor:middle}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.x:not(.web) text[transform]{text-anchor:start}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.x:not(.web) text[transform].backwards{text-anchor:end}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y text{text-anchor:end}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y text[transform].backwards{text-anchor:start}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y2 text{text-anchor:start}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y2 text[transform].backwards{text-anchor:end}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .guide.line{stroke-dasharray:4,4;stroke:black}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .major.guide.line{stroke-dasharray:6,6;stroke:black}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .horizontal .axis.y .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .horizontal .axis.y2 .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .vertical .axis.x .guide.line{opacity:0}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .horizontal .axis.always_show .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .vertical .axis.always_show .guide.line{opacity:1 !important}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y .guides:hover .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.y2 .guides:hover .guide.line,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis.x .guides:hover .guide.line{opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .axis .guides:hover text{opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .nofill{fill:none}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .subtle-fill{fill-opacity:.2}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .dot{stroke-width:1px;fill-opacity:1;stroke-opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .dot.active{stroke-width:5px}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .dot.negative{fill:transparent}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 text,#chart-f1737c45-bee6-485a-93a8-269fd744fc88 tspan{stroke:none !important}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .series text.active{opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip rect{fill-opacity:.95;stroke-width:.5}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .tooltip text{fill-opacity:1}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .showable{visibility:hidden}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .showable.shown{visibility:visible}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .gauge-background{fill:rgba(229,229,229,1);stroke:none}#chart-f1737c45-bee6-485a-93a8-269fd744fc88 .bg-lines{stroke:rgba(249,249,249,1);stroke-width:2px}</style>
+    <script
+       type="text/javascript"
+       id="script1">window.pygal = window.pygal || {};window.pygal.config = window.pygal.config || {};window.pygal.config['f1737c45-bee6-485a-93a8-269fd744fc88'] = {&quot;allow_interruptions&quot;: false, &quot;box_mode&quot;: &quot;extremes&quot;, &quot;classes&quot;: [&quot;pygal-chart&quot;], &quot;css&quot;: [&quot;file://style.css&quot;, &quot;file://graph.css&quot;], &quot;defs&quot;: [], &quot;disable_xml_declaration&quot;: false, &quot;dots_size&quot;: 4, &quot;dynamic_print_values&quot;: false, &quot;explicit_size&quot;: false, &quot;fill&quot;: false, &quot;force_uri_protocol&quot;: &quot;https&quot;, &quot;formatter&quot;: null, &quot;half_pie&quot;: false, &quot;height&quot;: 600, &quot;include_x_axis&quot;: false, &quot;inner_radius&quot;: 0, &quot;interpolate&quot;: null, &quot;interpolation_parameters&quot;: {}, &quot;interpolation_precision&quot;: 250, &quot;inverse_y_axis&quot;: false, &quot;js&quot;: [&quot;//kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js&quot;], &quot;legend_at_bottom&quot;: false, &quot;legend_at_bottom_columns&quot;: null, &quot;legend_box_size&quot;: 12, &quot;logarithmic&quot;: false, &quot;margin&quot;: 20, &quot;margin_bottom&quot;: null, &quot;margin_left&quot;: null, &quot;margin_right&quot;: null, &quot;margin_top&quot;: null, &quot;max_scale&quot;: 16, &quot;min_scale&quot;: 4, &quot;missing_value_fill_truncation&quot;: &quot;x&quot;, &quot;no_data_text&quot;: &quot;No data&quot;, &quot;no_prefix&quot;: false, &quot;order_min&quot;: null, &quot;pretty_print&quot;: false, &quot;print_labels&quot;: false, &quot;print_values&quot;: false, &quot;print_values_position&quot;: &quot;center&quot;, &quot;print_zeroes&quot;: true, &quot;range&quot;: [0.7, 1.0], &quot;reverse_direction&quot;: false, &quot;rounded_bars&quot;: null, &quot;secondary_range&quot;: null, &quot;show_dots&quot;: true, &quot;show_legend&quot;: true, &quot;show_minor_x_labels&quot;: true, &quot;show_minor_y_labels&quot;: true, &quot;show_only_major_dots&quot;: false, &quot;show_x_guides&quot;: false, &quot;show_x_labels&quot;: true, &quot;show_y_guides&quot;: true, &quot;show_y_labels&quot;: true, &quot;spacing&quot;: 10, &quot;stack_from_top&quot;: false, &quot;strict&quot;: false, &quot;stroke&quot;: false, &quot;stroke_style&quot;: null, &quot;style&quot;: {&quot;background&quot;: &quot;rgba(249, 249, 249, 1)&quot;, &quot;ci_colors&quot;: [], &quot;colors&quot;: [&quot;#F44336&quot;, &quot;#3F51B5&quot;, &quot;#009688&quot;, &quot;#FFC107&quot;, &quot;#FF5722&quot;, &quot;#9C27B0&quot;, &quot;#03A9F4&quot;, &quot;#8BC34A&quot;, &quot;#FF9800&quot;, &quot;#E91E63&quot;, &quot;#2196F3&quot;, &quot;#4CAF50&quot;, &quot;#FFEB3B&quot;, &quot;#673AB7&quot;, &quot;#00BCD4&quot;, &quot;#CDDC39&quot;, &quot;#9E9E9E&quot;, &quot;#607D8B&quot;], &quot;dot_opacity&quot;: &quot;1&quot;, &quot;font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;foreground&quot;: &quot;rgba(0, 0, 0, .87)&quot;, &quot;foreground_strong&quot;: &quot;rgba(0, 0, 0, 1)&quot;, &quot;foreground_subtle&quot;: &quot;rgba(0, 0, 0, .54)&quot;, &quot;guide_stroke_color&quot;: &quot;black&quot;, &quot;guide_stroke_dasharray&quot;: &quot;4,4&quot;, &quot;label_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;label_font_size&quot;: 10, &quot;legend_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;legend_font_size&quot;: 14, &quot;major_guide_stroke_color&quot;: &quot;black&quot;, &quot;major_guide_stroke_dasharray&quot;: &quot;6,6&quot;, &quot;major_label_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;major_label_font_size&quot;: 10, &quot;no_data_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;no_data_font_size&quot;: 64, &quot;opacity&quot;: &quot;.7&quot;, &quot;opacity_hover&quot;: &quot;.8&quot;, &quot;plot_background&quot;: &quot;rgba(255, 255, 255, 1)&quot;, &quot;stroke_opacity&quot;: &quot;.8&quot;, &quot;stroke_opacity_hover&quot;: &quot;.9&quot;, &quot;stroke_width&quot;: &quot;1&quot;, &quot;stroke_width_hover&quot;: &quot;4&quot;, &quot;title_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;title_font_size&quot;: 16, &quot;tooltip_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;tooltip_font_size&quot;: 14, &quot;transition&quot;: &quot;150ms&quot;, &quot;value_background&quot;: &quot;rgba(229, 229, 229, 1)&quot;, &quot;value_colors&quot;: [], &quot;value_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;value_font_size&quot;: 16, &quot;value_label_font_family&quot;: &quot;Consolas, \&quot;Liberation Mono\&quot;, Menlo, Courier, monospace&quot;, &quot;value_label_font_size&quot;: 10}, &quot;title&quot;: &quot;Evolution of CNN Architectures&quot;, &quot;tooltip_border_radius&quot;: 0, &quot;tooltip_fancy_mode&quot;: true, &quot;truncate_label&quot;: null, &quot;truncate_legend&quot;: null, &quot;width&quot;: 1000, &quot;x_label_rotation&quot;: 0, &quot;x_labels&quot;: null, &quot;x_labels_major&quot;: null, &quot;x_labels_major_count&quot;: null, &quot;x_labels_major_every&quot;: null, &quot;x_title&quot;: &quot;# of MACs&quot;, &quot;xrange&quot;: [0, 50000000], &quot;y_label_rotation&quot;: 0, &quot;y_labels&quot;: null, &quot;y_labels_major&quot;: null, &quot;y_labels_major_count&quot;: null, &quot;y_labels_major_every&quot;: null, &quot;y_title&quot;: &quot;Validation Accuracy&quot;, &quot;zero&quot;: 0, &quot;legends&quot;: [&quot;Seed DNA&quot;, &quot;Init Pop&quot;, &quot;Gen 1-2&quot;, &quot;Gen 3-4&quot;]}</script>
+    <script
+       type="text/javascript"
+       xlink:href="https://kozea.github.io/pygal.js/2.0.x/pygal-tooltips.min.js"
+       id="script2" />
+  </defs>
+  <title
+     id="title2">Evolution of CNN Architectures</title>
+  <g
+     class="graph xy-graph vertical"
+     id="g156">
+    <rect
+       x="0"
+       y="0"
+       width="1000"
+       height="600"
+       class="background"
+       id="rect2" />
+    <g
+       transform="translate(169, 46)"
+       class="plot"
+       id="g32">
+      <rect
+         x="0"
+         y="0"
+         width="810.8"
+         height="488"
+         class="background"
+         id="rect3" />
+      <g
+         class="axis y always_show"
+         id="g20">
+        <path
+           d="M0.000000 488.000000 h810.800000"
+           class="line"
+           id="path3" />
+        <g
+           class="guides"
+           id="g4">
+          <path
+             d="M0.000000 478.615385 h810.800000"
+             class="guide line"
+             id="path4" />
+          <text
+             x="-5"
+             y="482.1153846153846"
+             class=""
+             id="text4">0.7</text>
+          <title
+             id="title4">0.7</title>
+        </g>
+        <g
+           class="guides"
+           id="g5">
+          <path
+             d="M0.000000 447.333333 h810.800000"
+             class="guide line"
+             id="path5" />
+          <text
+             x="-5"
+             y="450.8333333333333"
+             class=""
+             id="text5">0.72</text>
+          <title
+             id="title5">0.72</title>
+        </g>
+        <g
+           class="guides"
+           id="g6">
+          <path
+             d="M0.000000 416.051282 h810.800000"
+             class="guide line"
+             id="path6" />
+          <text
+             x="-5"
+             y="419.551282051282"
+             class=""
+             id="text6">0.74</text>
+          <title
+             id="title6">0.74</title>
+        </g>
+        <g
+           class="guides"
+           id="g7">
+          <path
+             d="M0.000000 384.769231 h810.800000"
+             class="guide line"
+             id="path7" />
+          <text
+             x="-5"
+             y="388.2692307692307"
+             class=""
+             id="text7">0.76</text>
+          <title
+             id="title7">0.76</title>
+        </g>
+        <g
+           class="guides"
+           id="g8">
+          <path
+             d="M0.000000 353.487179 h810.800000"
+             class="guide line"
+             id="path8" />
+          <text
+             x="-5"
+             y="356.9871794871794"
+             class=""
+             id="text8">0.78</text>
+          <title
+             id="title8">0.78</title>
+        </g>
+        <g
+           class="guides"
+           id="g9">
+          <path
+             d="M0.000000 322.205128 h810.800000"
+             class="guide line"
+             id="path9" />
+          <text
+             x="-5"
+             y="325.70512820512806"
+             class=""
+             id="text9">0.8</text>
+          <title
+             id="title9">0.8</title>
+        </g>
+        <g
+           class="guides"
+           id="g10">
+          <path
+             d="M0.000000 290.923077 h810.800000"
+             class="guide line"
+             id="path10" />
+          <text
+             x="-5"
+             y="294.42307692307696"
+             class=""
+             id="text10">0.82</text>
+          <title
+             id="title10">0.82</title>
+        </g>
+        <g
+           class="guides"
+           id="g11">
+          <path
+             d="M0.000000 259.641026 h810.800000"
+             class="guide line"
+             id="path11" />
+          <text
+             x="-5"
+             y="263.14102564102564"
+             class=""
+             id="text11">0.84</text>
+          <title
+             id="title11">0.84</title>
+        </g>
+        <g
+           class="guides"
+           id="g12">
+          <path
+             d="M0.000000 228.358974 h810.800000"
+             class="guide line"
+             id="path12" />
+          <text
+             x="-5"
+             y="231.8589743589743"
+             class=""
+             id="text12">0.86</text>
+          <title
+             id="title12">0.86</title>
+        </g>
+        <g
+           class="guides"
+           id="g13">
+          <path
+             d="M0.000000 197.076923 h810.800000"
+             class="guide line"
+             id="path13" />
+          <text
+             x="-5"
+             y="200.57692307692304"
+             class=""
+             id="text13">0.88</text>
+          <title
+             id="title13">0.88</title>
+        </g>
+        <g
+           class="guides"
+           id="g14">
+          <path
+             d="M0.000000 165.794872 h810.800000"
+             class="guide line"
+             id="path14" />
+          <text
+             x="-5"
+             y="169.29487179487177"
+             class=""
+             id="text14">0.9</text>
+          <title
+             id="title14">0.9</title>
+        </g>
+        <g
+           class="guides"
+           id="g15">
+          <path
+             d="M0.000000 134.512821 h810.800000"
+             class="guide line"
+             id="path15" />
+          <text
+             x="-5"
+             y="138.01282051282044"
+             class=""
+             id="text15">0.92</text>
+          <title
+             id="title15">0.92</title>
+        </g>
+        <g
+           class="guides"
+           id="g16">
+          <path
+             d="M0.000000 103.230769 h810.800000"
+             class="guide line"
+             id="path16" />
+          <text
+             x="-5"
+             y="106.73076923076928"
+             class=""
+             id="text16">0.94</text>
+          <title
+             id="title16">0.94</title>
+        </g>
+        <g
+           class="guides"
+           id="g17">
+          <path
+             d="M0.000000 71.948718 h810.800000"
+             class="guide line"
+             id="path17" />
+          <text
+             x="-5"
+             y="75.44871794871807"
+             class=""
+             id="text17">0.96</text>
+          <title
+             id="title17">0.96</title>
+        </g>
+        <g
+           class="guides"
+           id="g18">
+          <path
+             d="M0.000000 40.666667 h810.800000"
+             class="guide line"
+             id="path18" />
+          <text
+             x="-5"
+             y="44.166666666666686"
+             class=""
+             id="text18">0.98</text>
+          <title
+             id="title18">0.98</title>
+        </g>
+        <g
+           class="guides"
+           id="g19">
+          <path
+             d="M0.000000 9.384615 h810.800000"
+             class="major guide line"
+             id="path19" />
+          <text
+             x="-5"
+             y="12.884615384615358"
+             class="major"
+             id="text19">1</text>
+          <title
+             id="title19">1</title>
+        </g>
+      </g>
+      <g
+         class="axis x"
+         id="g27">
+        <g
+           class="guides"
+           id="g21">
+          <path
+             d="M15.592308 0.000000 v488.000000"
+             class="axis line"
+             id="path20" />
+          <text
+             x="15.592307692307692"
+             y="503.0"
+             class=""
+             id="text20">0</text>
+          <title
+             id="title20">0</title>
+        </g>
+        <g
+           class="guides"
+           id="g22">
+          <path
+             d="M171.515385 0.000000 v488.000000"
+             class="guide line"
+             id="path21" />
+          <text
+             x="171.51538461538462"
+             y="503.0"
+             class=""
+             id="text21">10000000</text>
+          <title
+             id="title21">10000000</title>
+        </g>
+        <g
+           class="guides"
+           id="g23">
+          <path
+             d="M327.438462 0.000000 v488.000000"
+             class="guide line"
+             id="path22" />
+          <text
+             x="327.4384615384615"
+             y="503.0"
+             class=""
+             id="text22">20000000</text>
+          <title
+             id="title22">20000000</title>
+        </g>
+        <g
+           class="guides"
+           id="g24">
+          <path
+             d="M483.361538 0.000000 v488.000000"
+             class="guide line"
+             id="path23" />
+          <text
+             x="483.3615384615385"
+             y="503.0"
+             class=""
+             id="text23">30000000</text>
+          <title
+             id="title23">30000000</title>
+        </g>
+        <g
+           class="guides"
+           id="g25">
+          <path
+             d="M639.284615 0.000000 v488.000000"
+             class="guide line"
+             id="path24" />
+          <text
+             x="639.2846153846153"
+             y="503.0"
+             class=""
+             id="text24">40000000</text>
+          <title
+             id="title24">40000000</title>
+        </g>
+        <g
+           class="guides"
+           id="g26">
+          <path
+             d="M795.207692 0.000000 v488.000000"
+             class="guide line"
+             id="path25" />
+          <text
+             x="795.2076923076924"
+             y="503.0"
+             class=""
+             id="text25">50000000</text>
+          <title
+             id="title25">50000000</title>
+        </g>
+      </g>
+      <g
+         class="series serie-0 color-0"
+         id="g28" />
+      <g
+         class="series serie-1 color-1"
+         id="g29" />
+      <g
+         class="series serie-2 color-2"
+         id="g30" />
+      <g
+         class="series serie-3 color-3"
+         id="g31" />
+    </g>
+    <g
+       class="titles"
+       id="g34">
+      <text
+         x="500.0"
+         y="26"
+         class="title plot_title"
+         id="text32">Evolution of CNN Architectures</text>
+      <text
+         x="574.5999999999999"
+         y="580"
+         class="title"
+         id="text33"># of MACs</text>
+      <text
+         x="89.2"
+         y="316.0"
+         class="title"
+         transform="rotate(-90 89.200000 290.000000)"
+         id="text34">Validation Accuracy</text>
+    </g>
+    <g
+       transform="translate(169, 46)"
+       class="plot overlay"
+       id="g143">
+      <g
+         class="series serie-0 color-0"
+         id="g38">
+        <g
+           class="dots"
+           id="g37">
+          <desc
+             class="label"
+             id="desc34">DNA 0</desc>
+          <circle
+             cx="622.0846784"
+             cy="339.93162567187574"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle34" />
+          <desc
+             class="value"
+             id="desc35">38896896: 0.7886666656</desc>
+          <desc
+             class="x left top"
+             id="desc36">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc37">339.93162567187574</desc>
+        </g>
+      </g>
+      <g
+         class="series serie-1 color-1"
+         id="g74">
+        <g
+           class="dots"
+           id="g41">
+          <desc
+             class="label"
+             id="desc38">DNA 1</desc>
+          <circle
+             cx="622.0846784"
+             cy="372.77782277571845"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle38" />
+          <desc
+             class="value"
+             id="desc39">38896896: 0.7676666379</desc>
+          <desc
+             class="x left top"
+             id="desc40">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc41">372.77782277571845</desc>
+        </g>
+        <g
+           class="dots"
+           id="g45">
+          <desc
+             class="label"
+             id="desc42">DNA 2</desc>
+          <circle
+             cx="523.7308962461539"
+             cy="348.27346076720795"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle42" />
+          <desc
+             class="value"
+             id="desc43">32589056: 0.7833333611</desc>
+          <desc
+             class="x left top"
+             id="desc44">523.7308962461539</desc>
+          <desc
+             class="y left top"
+             id="desc45">348.27346076720795</desc>
+        </g>
+        <g
+           class="dots"
+           id="g49">
+          <desc
+             class="label"
+             id="desc46">DNA 3</desc>
+          <circle
+             cx="622.0687118769231"
+             cy="338.8888729780148"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle46" />
+          <desc
+             class="value"
+             id="desc47">38895872: 0.7893333435</desc>
+          <desc
+             class="x left top"
+             id="desc48">622.0687118769231</desc>
+          <desc
+             class="y left top"
+             id="desc49">338.8888729780148</desc>
+        </g>
+        <g
+           class="dots"
+           id="g53">
+          <desc
+             class="label"
+             id="desc50">DNA 4</desc>
+          <circle
+             cx="622.0846784"
+             cy="400.41025641025635"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle50" />
+          <desc
+             class="value"
+             id="desc51">38896896: 0.75</desc>
+          <desc
+             class="x left top"
+             id="desc52">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc53">400.41025641025635</desc>
+        </g>
+        <g
+           class="dots"
+           id="g57">
+          <desc
+             class="label"
+             id="desc54">DNA 5</desc>
+          <circle
+             cx="287.9372834461538"
+             cy="361.829059331845"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle54" />
+          <desc
+             class="value"
+             id="desc55">17466624: 0.774666667</desc>
+          <desc
+             class="x top"
+             id="desc56">287.9372834461538</desc>
+          <desc
+             class="y top"
+             id="desc57">361.829059331845</desc>
+        </g>
+        <g
+           class="dots"
+           id="g61">
+          <desc
+             class="label"
+             id="desc58">DNA 6</desc>
+          <circle
+             cx="621.1861872615384"
+             cy="362.87181202570594"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle58" />
+          <desc
+             class="value"
+             id="desc59">38839272: 0.773999989</desc>
+          <desc
+             class="x left top"
+             id="desc60">621.1861872615384</desc>
+          <desc
+             class="y left top"
+             id="desc61">362.87181202570594</desc>
+        </g>
+        <g
+           class="dots"
+           id="g65">
+          <desc
+             class="label"
+             id="desc62">DNA 7</desc>
+          <circle
+             cx="622.0846784"
+             cy="418.6581022556011"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle62" />
+          <desc
+             class="value"
+             id="desc63">38896896: 0.7383333445</desc>
+          <desc
+             class="x left top"
+             id="desc64">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc65">418.6581022556011</desc>
+        </g>
+        <g
+           class="dots"
+           id="g69">
+          <desc
+             class="label"
+             id="desc66">DNA 8</desc>
+          <circle
+             cx="622.0846784"
+             cy="1401.435898368175"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle66" />
+          <desc
+             class="value"
+             id="desc67">38896896: 0.1099999994</desc>
+          <desc
+             class="x left top"
+             id="desc68">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc69">1401.435898368175</desc>
+        </g>
+        <g
+           class="dots"
+           id="g73">
+          <desc
+             class="label"
+             id="desc70">DNA 9</desc>
+          <circle
+             cx="204.40043470769228"
+             cy="466.102557390164"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle70" />
+          <desc
+             class="value"
+             id="desc71">12109056: 0.7080000043</desc>
+          <desc
+             class="x top"
+             id="desc72">204.40043470769228</desc>
+          <desc
+             class="y top"
+             id="desc73">466.102557390164</desc>
+        </g>
+      </g>
+      <g
+         class="series serie-2 color-2"
+         id="g106">
+        <g
+           class="dots"
+           id="g77">
+          <desc
+             class="label"
+             id="desc74">DNA 10</desc>
+          <circle
+             cx="622.5165853230769"
+             cy="354.0085539695543"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle74" />
+          <desc
+             class="value"
+             id="desc75">38924596: 0.7796666622</desc>
+          <desc
+             class="x left top"
+             id="desc76">622.5165853230769</desc>
+          <desc
+             class="y left top"
+             id="desc77">354.0085539695543</desc>
+        </g>
+        <g
+           class="dots"
+           id="g81">
+          <desc
+             class="label"
+             id="desc78">DNA 11</desc>
+          <circle
+             cx="622.7317591692307"
+             cy="337.3247905511122"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle78" />
+          <desc
+             class="value"
+             id="desc79">38938396: 0.7903333306</desc>
+          <desc
+             class="x left top"
+             id="desc80">622.7317591692307</desc>
+          <desc
+             class="y left top"
+             id="desc81">337.3247905511122</desc>
+        </g>
+        <g
+           class="dots"
+           id="g85">
+          <desc
+             class="label"
+             id="desc82">DNA 14</desc>
+          <circle
+             cx="622.0846784"
+             cy="391.0256686210632"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle82" />
+          <desc
+             class="value"
+             id="desc83">38896896: 0.7559999824</desc>
+          <desc
+             class="x left top"
+             id="desc84">622.0846784</desc>
+          <desc
+             class="y left top"
+             id="desc85">391.0256686210632</desc>
+        </g>
+        <g
+           class="dots"
+           id="g89">
+          <desc
+             class="label"
+             id="desc86">DNA 15</desc>
+          <circle
+             cx="634.3469681230769"
+             cy="349.3162134610689"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle86" />
+          <desc
+             class="value"
+             id="desc87">39683328: 0.7826666832</desc>
+          <desc
+             class="x left top"
+             id="desc88">634.3469681230769</desc>
+          <desc
+             class="y left top"
+             id="desc89">349.3162134610689</desc>
+        </g>
+        <g
+           class="dots"
+           id="g93">
+          <desc
+             class="label"
+             id="desc90">DNA 18</desc>
+          <circle
+             cx="562.5299839076922"
+             cy="377.9914930172455"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle90" />
+          <desc
+             class="value"
+             id="desc91">35077404: 0.7643333077</desc>
+          <desc
+             class="x left top"
+             id="desc92">562.5299839076922</desc>
+          <desc
+             class="y left top"
+             id="desc93">377.9914930172455</desc>
+        </g>
+        <g
+           class="dots"
+           id="g97">
+          <desc
+             class="label"
+             id="desc94">DNA 19</desc>
+          <circle
+             cx="475.58428249230764"
+             cy="359.74355394412305"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle94" />
+          <desc
+             class="value"
+             id="desc95">29501212: 0.7760000229</desc>
+          <desc
+             class="x left top"
+             id="desc96">475.58428249230764</desc>
+          <desc
+             class="y left top"
+             id="desc97">359.74355394412305</desc>
+        </g>
+        <g
+           class="dots"
+           id="g101">
+          <desc
+             class="label"
+             id="desc98">DNA 20</desc>
+          <circle
+             cx="621.8909595692307"
+             cy="349.3162134610689"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle98" />
+          <desc
+             class="value"
+             id="desc99">38884472: 0.7826666832</desc>
+          <desc
+             class="x left top"
+             id="desc100">621.8909595692307</desc>
+          <desc
+             class="y left top"
+             id="desc101">349.3162134610689</desc>
+        </g>
+        <g
+           class="dots"
+           id="g105">
+          <desc
+             class="label"
+             id="desc102">DNA 21</desc>
+          <circle
+             cx="630.8128780307692"
+             cy="389.4614929663829"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle102" />
+          <desc
+             class="value"
+             id="desc103">39456672: 0.7570000291</desc>
+          <desc
+             class="x left top"
+             id="desc104">630.8128780307692</desc>
+          <desc
+             class="y left top"
+             id="desc105">389.4614929663829</desc>
+        </g>
+      </g>
+      <g
+         class="series serie-3 color-3"
+         id="g142">
+        <g
+           class="dots"
+           id="g109">
+          <desc
+             class="label"
+             id="desc106">DNA 22</desc>
+          <circle
+             cx="289.4101952"
+             cy="355.5726363964569"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle106" />
+          <desc
+             class="value"
+             id="desc107">17561088: 0.7786666751</desc>
+          <desc
+             class="x top"
+             id="desc108">289.4101952</desc>
+          <desc
+             class="y top"
+             id="desc109">355.5726363964569</desc>
+        </g>
+        <g
+           class="dots"
+           id="g113">
+          <desc
+             class="label"
+             id="desc110">DNA 23</desc>
+          <circle
+             cx="245.7856625230769"
+             cy="412.4016793202131"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle110" />
+          <desc
+             class="value"
+             id="desc111">14763264: 0.7423333526</desc>
+          <desc
+             class="x top"
+             id="desc112">245.7856625230769</desc>
+          <desc
+             class="y top"
+             id="desc113">412.4016793202131</desc>
+        </g>
+        <g
+           class="dots"
+           id="g117">
+          <desc
+             class="label"
+             id="desc114">DNA 25</desc>
+          <circle
+             cx="472.5187100615384"
+             cy="416.57269009565687"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle114" />
+          <desc
+             class="value"
+             id="desc115">29304604: 0.7396666408</desc>
+          <desc
+             class="x left top"
+             id="desc116">472.5187100615384</desc>
+          <desc
+             class="y left top"
+             id="desc117">416.57269009565687</desc>
+        </g>
+        <g
+           class="dots"
+           id="g121">
+          <desc
+             class="label"
+             id="desc118">DNA 28</desc>
+          <circle
+             cx="289.3777632"
+             cy="362.3503890648866"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle118" />
+          <desc
+             class="value"
+             id="desc119">17559008: 0.7743333578</desc>
+          <desc
+             class="x top"
+             id="desc120">289.3777632</desc>
+          <desc
+             class="y top"
+             id="desc121">362.3503890648866</desc>
+        </g>
+        <g
+           class="dots"
+           id="g125">
+          <desc
+             class="label"
+             id="desc122">DNA 29</desc>
+          <circle
+             cx="460.9385526153846"
+             cy="401.97433883715894"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle122" />
+          <desc
+             class="value"
+             id="desc123">28561920: 0.7490000129</desc>
+          <desc
+             class="x left top"
+             id="desc124">460.9385526153846</desc>
+          <desc
+             class="y left top"
+             id="desc125">401.97433883715894</desc>
+        </g>
+        <g
+           class="dots"
+           id="g129">
+          <desc
+             class="label"
+             id="desc126">DNA 30</desc>
+          <circle
+             cx="245.7856625230769"
+             cy="448.89746423868024"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle126" />
+          <desc
+             class="value"
+             id="desc127">14763264: 0.7189999819</desc>
+          <desc
+             class="x top"
+             id="desc128">245.7856625230769</desc>
+          <desc
+             class="y top"
+             id="desc129">448.89746423868024</desc>
+        </g>
+        <g
+           class="dots"
+           id="g133">
+          <desc
+             class="label"
+             id="desc130">DNA 31</desc>
+          <circle
+             cx="245.7856625230769"
+             cy="387.37608080643867"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle130" />
+          <desc
+             class="value"
+             id="desc131">14763264: 0.7583333254</desc>
+          <desc
+             class="x top"
+             id="desc132">245.7856625230769</desc>
+          <desc
+             class="y top"
+             id="desc133">387.37608080643867</desc>
+        </g>
+        <g
+           class="dots"
+           id="g137">
+          <desc
+             class="label"
+             id="desc134">DNA 32</desc>
+          <circle
+             cx="475.58428249230764"
+             cy="371.21364712103815"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle134" />
+          <desc
+             class="value"
+             id="desc135">29501212: 0.7686666846</desc>
+          <desc
+             class="x left top"
+             id="desc136">475.58428249230764</desc>
+          <desc
+             class="y left top"
+             id="desc137">371.21364712103815</desc>
+        </g>
+        <g
+           class="dots"
+           id="g141">
+          <desc
+             class="label"
+             id="desc138">DNA 33</desc>
+          <circle
+             cx="475.99311279999995"
+             cy="359.74355394412305"
+             r="4"
+             class="dot reactive tooltip-trigger"
+             id="circle138" />
+          <desc
+             class="value"
+             id="desc139">29527432: 0.7760000229</desc>
+          <desc
+             class="x left top"
+             id="desc140">475.99311279999995</desc>
+          <desc
+             class="y left top"
+             id="desc141">359.74355394412305</desc>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(169, 46)"
+       class="plot text-overlay"
+       id="g148">
+      <g
+         class="series serie-0 color-0"
+         id="g144" />
+      <g
+         class="series serie-1 color-1"
+         id="g145" />
+      <g
+         class="series serie-2 color-2"
+         id="g146" />
+      <g
+         class="series serie-3 color-3"
+         id="g147" />
+    </g>
+    <g
+       transform="translate(169, 46)"
+       class="plot tooltip-overlay"
+       id="g151">
+      <g
+         transform="translate(0 0)"
+         style="opacity: 0"
+         class="tooltip"
+         id="g150">
+        <rect
+           rx="0"
+           ry="0"
+           width="0"
+           height="0"
+           class="tooltip-box"
+           id="rect148" />
+        <g
+           class="text"
+           id="g149" />
+      </g>
+    </g>
+    <g
+       transform="translate(10, 56)"
+       class="legends"
+       id="g154">
+      <g
+         id="activate-serie-0"
+         class="legend reactive activate-serie">
+        <rect
+           x="0.0"
+           y="1.0"
+           width="12"
+           height="12"
+           class="color-0 reactive"
+           id="rect151" />
+        <text
+           x="17.0"
+           y="11.2"
+           id="text151">Seed DNA</text>
+      </g>
+      <g
+         id="activate-serie-1"
+         class="legend reactive activate-serie">
+        <rect
+           x="0.0"
+           y="22.0"
+           width="12"
+           height="12"
+           class="color-1 reactive"
+           id="rect152" />
+        <text
+           x="17.0"
+           y="32.2"
+           id="text152">Init Pop</text>
+      </g>
+      <g
+         id="activate-serie-2"
+         class="legend reactive activate-serie">
+        <rect
+           x="0.0"
+           y="43.0"
+           width="12"
+           height="12"
+           class="color-2 reactive"
+           id="rect153" />
+        <text
+           x="17.0"
+           y="53.2"
+           id="text153">Gen 1-2</text>
+      </g>
+      <g
+         id="activate-serie-3"
+         class="legend reactive activate-serie">
+        <rect
+           x="0.0"
+           y="64.0"
+           width="12"
+           height="12"
+           class="color-3 reactive"
+           id="rect154" />
+        <text
+           x="17.0"
+           y="74.2"
+           id="text154">Gen 3-4</text>
+      </g>
+    </g>
+    <g
+       transform="translate(990, 56)"
+       class="legends"
+       id="g155" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Evolution of CNN Architectures</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
